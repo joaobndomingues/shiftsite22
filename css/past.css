@@ -1,0 +1,236 @@
+.lines_background{
+  background-image: url("../images/background_past_c.png");
+}
+.past, .partners, .memories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.partners{
+  margin-top: 50vh;
+}
+
+.past h1, .partners h1, .memories h1{
+  font-size: 3rem;
+  margin: 5% auto;
+  text-transform: uppercase;
+}
+.year{
+  display: flex;
+  align-items: center;
+  width:55%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.year a{
+  color:white;
+  background-color:#1E1A30;
+  padding: 3% 5%;
+  font-size: 2em;
+  margin:2%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-family: Poppins-bold;
+}
+.year a:hover{
+  background-color: #964DF2;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+.year a:active{
+  background-color: #9665D6;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+
+#content-gallery{
+  width: 45vw;
+  position: relative;
+
+}
+#barra{
+  margin-bottom: 2%;
+}
+.rect {
+  height: 4px;
+  width: 30px;
+  display: inline-block;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.6s;
+}
+
+.images{
+  position: absolute;
+  z-index: 2;
+  left:10%;
+  transition: 2s;
+  width: 80%;
+}
+
+#controls{
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  padding-top: 20%;
+  position: absolute;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  font: Poppins;
+  border-bottom: 3px solid  #ffffff;
+}
+.prev:hover,
+.next:hover{
+color:#B690E8;
+border-bottom: 3px solid #B690E8;
+text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+
+.partners_text{
+  width:40%;
+  text-align: center;
+  font-weight: 600;
+}
+.partner-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+  width:60%;
+  margin-bottom: 5%;
+}
+.partner-section a{
+  background-color:white;
+  width: 10rem;
+  height: 6rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: 0.9s;
+}
+.partner-section img::before{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* ------------------ MOBILE ------------------ */
+
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
+
+  .lines_background{
+    background-image: url("../images/background_past_mobile.png");
+  }
+
+.past h1, .partners h1, .memories h1{
+  font-size: 2.2rem;
+  margin: 5% auto;
+  width:70%;
+}
+
+#content-gallery{
+  width: 60vw;
+  position: relative;
+}
+#barra{
+  margin-bottom: 4%;
+}
+.images{
+  position: absolute;
+  z-index: 2;
+  left:-7%;
+  transition: 2s;
+  width: 120%;
+}
+.past{
+  margin-bottom:5vh;
+}
+
+#controls{
+display: none;
+}
+.partner-section {
+  margin: 2rem 0;
+}
+.partner-section , .partners_text{
+  width:70%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.past{
+  padding-top: 14vh;
+}
+.partners{
+  margin-top: 30vh;
+  padding-top: 0vh;
+  padding-bottom:0;
+}
+.partner-section a{
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 9px;
+  margin-bottom: 0.7rem;
+}
+.content-gallery{
+  width:80vw;
+  height: auto;
+}
+.year{
+  width:70%;
+}
+.year a{
+  font-size: 1.1rem;
+  padding: 6% 10%;
+  margin: 5%;
+}
+}
+/* ------------------ IPAD ------------------ */
+@media screen and (min-width: 480px) 
+and (max-width: 1030px){ 
+
+  .lines_background{
+    background-image: url("../images/background_past_mobile.png");
+  }
+  #controls{
+    display: none;
+  }
+  #content-gallery{
+    width: 65vw;
+    position: relative;
+  }
+  .images{
+    position: absolute;
+    z-index: 2;
+    left:-5%;
+    transition: 2s;
+    width: 110%;
+  }
+  .past{
+    margin-bottom: 5vh;
+  }
+  .partners{
+    margin-top: 40vh;
+  }
+  .partners_text{
+    font-size: 1.1em;
+  }
+  .partner-section a{
+    width: 8rem;
+    height: 5rem;
+    border-radius: 9px;
+    margin-bottom: 0.7rem;
+  }
+
+}

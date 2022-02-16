@@ -1,0 +1,399 @@
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url('../css/fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: Poppins;
+  src: url('../css/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: Hind;
+  src: url('../css/fonts/Hind/Hind-Medium.ttf');
+}
+@font-face {
+  font-family: Hind-light;
+  src: url('../css/fonts/Hind/Hind-Light.ttf');
+}
+
+html {
+    font-size: 18px;
+    font-family: Hind, sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    
+}
+
+
+body {
+    width: 100vw;
+    background-color: #b215c6;
+    overflow-x: hidden; 
+}
+
+
+a {
+    color: white;
+    font-family: Poppins-bold, sans-serif;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: Poppins-bold, sans-serif;
+}
+
+p, button, li{
+  font-family: Hind, sans-serif;
+  color:#ffffff;
+  line-height: 30px;
+}
+ul{
+  list-style-position: inside;
+}
+li{
+  list-style-type: disc;
+
+}
+
+
+
+/* NAVBAR */
+#nav{
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    background-color: var(--color-white);
+    box-sizing: border-box;
+    align-items: center;
+}
+#nav img{
+  cursor: pointer;
+  align-self: center;
+  margin:auto;
+}
+
+#shift{
+  align-self: start;
+  width: 13%;
+}
+
+
+#taikai{
+  border: none;
+  background: linear-gradient(90deg, #942873 -4.12%, #4A2BEC 109.88%);
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-family: Poppins;
+  height: 5vh;
+  padding: 0 2vw;
+  margin-right: 0;
+  }
+
+#menu{
+  margin:auto 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu_nav{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+
+#menu a , .social_text a{
+  display: -webkit-box;
+  text-transform: uppercase;
+  align-self: center;
+  color: white;
+}
+
+
+#taikai:hover{
+  box-shadow: 0px 0px 22px #7D6AE4;
+  transition: 0.3s;
+}
+
+#menu a:hover {
+  color:#c2b5ff;
+  text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+
+#menu a:active{
+  color:#d0c6ff;
+}
+
+#tigre_mobile{
+  display: none;
+}
+
+.bubbles_background{
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+/* FOOTER */
+footer{
+  background-image: url("../images/footer.png");
+  width: 100vw;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5% 10%;
+}
+
+.contact , .social , .made{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw/3;
+}
+
+#contact p , .made p {
+  padding-top: 2vh;
+}
+.social{
+  align-items: center;
+}
+.social_img{
+  display: flex;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.social_img a:nth-child(2){
+  margin-left: 2vw;
+}
+
+#shift_icon{
+  height: 8vh;
+  margin:0 2vw ;
+}
+
+.social_img a:nth-child(4){
+  margin-right: 2vw;
+}
+
+.social_text{
+  display: flex;
+  width:120%;
+  justify-content: space-between;
+  padding-top: 2vh;
+}
+
+.social_text a:hover{
+  color:#c2b5ff;
+  text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+.made_img{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.made_img img{
+  height: 6vh;
+  cursor: pointer;
+}
+
+.made p{
+  text-align: right;
+}
+
+.made_img img:nth-child(2){
+  padding-left: 12%;
+
+}
+
+#menu_icon{
+  display: none;
+}
+/* ------------------ MOBILE ------------------ */
+
+@media screen and (min-width: 320px) 
+  and (max-width: 500px){
+ 
+    p, ul{
+      line-height: 22px;
+    }
+
+  #scene{
+    z-index: 1;
+  }
+  #nav{
+      height: 11vh;
+      position: absolute;
+      width:100vw;
+      grid-template-columns: 1fr 1fr;
+      position: absolute;
+  }
+  #shift{
+    z-index: 4;
+    width:40vw;
+  }
+
+  #nav img:nth-child(2), #nav img:nth-child(3) {
+          padding: 4vh 0;
+  }
+
+  #nav img:nth-child(2) {
+    margin-left:8vw;
+  }
+
+  #nav img:nth-child(3) {
+    margin-right:8vw;
+  }
+  #menu a:nth-child(3){
+    margin-left: 0;
+  }
+
+  #tigre_mobile{
+    padding-top: 1vh;
+    padding-left: 20vw;
+}
+
+  #taikai{
+    position: fixed;
+    z-index: 3; 
+    top:90vh; 
+    right:8vw;
+    font-size: 0.9em;
+    text-transform: none;
+    font-family: Poppins;
+    padding: 0 4%;
+    -webkit-backface-visibility: hidden;
+  }
+
+   #menu_nav{
+    z-index: 3;
+    display: none;
+    width:100%;
+    padding: 15vh 8vw 20vh 8vw ;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+  }
+  
+  #menu a{
+    width: 85vw;
+    text-align: left;
+  }
+
+  #menu_icon{
+    right:0%;
+    z-index:4;
+  }
+
+  #menu_nav a{
+    display: block;
+    color:white;
+    font-size: 2.8rem;
+    font-family: Poppins-bold;
+    padding-bottom: 5%;
+  }
+
+  #menu a:nth-child(2) {
+    margin: 0 ;
+  }
+
+  #menu_icon{
+    display: inline;
+  }
+
+
+    /* FOOTER */
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      padding: 10% ;
+      font-size: 0.7rem;
+      align-items: center;
+    }
+
+    .contact , .social , .made{
+      width: 90%;
+    }
+
+    #shift_icon{
+      display: none;
+    }
+
+    .social{
+      order:0;
+    }
+    .contact{
+      order:2;
+      margin-top: 4vh;
+
+    }
+    .made{
+      order:3;
+      margin-top: 4vh;
+    }
+    .made img:nth-child(2){
+      padding-left: 2%;
+    }
+    .made img:nth-child(1){
+      padding-right: 2%;
+    }
+    .made_img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .made_img img{
+      width: 15vw;
+    }
+
+    .social_img{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      flex-wrap: wrap;
+    }
+ 
+    .contact{
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    footer .social_text{
+      display: none;
+    }
+    .made p {
+      text-align: center;
+      font-size: 1.3em;
+
+    }
+
+}
+
+/* ------------------ IPAD ------------------ */
+@media screen and (min-width: 480px) 
+and (max-width: 1030px){ 
+
+  .made_img img{
+    height: 5vh;
+  }
+  #menu a:nth-child(2) {
+    margin: 0 1.5rem;
+}
+  footer{
+    padding: 5% 8%;
+    font-size: 0.9em;
+  }
+  .social_text{
+    display:none;
+  }
+  
+
+}

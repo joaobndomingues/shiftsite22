@@ -1,0 +1,183 @@
+.lines_background{
+    background-image: url("../images/background_faq_c.png");
+  }
+  .guide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
+  
+  .guide h1{
+    font-size: 3rem;
+    margin: 5% auto;
+    text-transform: uppercase;
+  }
+  .guide p{
+      width:50%;
+  }
+  #mobile{
+    display: none;
+  }
+  .cont_faq{
+    padding: 2%;
+    background: #1E1A30;
+    border: 1px solid #FFFFFF;
+    border-image-slice: 1;
+    border-width: 3px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width:50%;
+    margin-bottom: 2%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+   .cont_faq:hover{
+    border: double 3px transparent;
+    background-image: linear-gradient( #1E1A30,#1E1A30 ), radial-gradient(circle at top left, #AC8FEC 0%,#E885A6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+  } 
+  
+  .answer{
+    display: none;
+  }
+  .cont ul{
+    font-weight: 600;
+  }
+  
+  .question {
+    z-index: 2;
+    cursor: pointer;
+  }
+  .question{
+    display: flex;
+    justify-content:  space-between;
+  }
+  .question ul{
+    font-family: Hind;
+  }
+  .answer ul{
+    font-weight: Hind;
+    padding-top: 2%;
+
+  }
+  .answer li{
+    color:#ffffff;
+  }
+  .download{
+      margin-bottom:  2%;
+      display: flex;
+  }
+  .download button{
+    border: none;
+    background: linear-gradient(90deg, #942873 -4.12%, #4A2BEC 109.88%);
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.46);
+    border-radius: 24px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: Poppins;
+    height: 7vh;
+    padding: 0 3vw;
+    margin-right: 0;
+  }
+  .download button:nth-child(1){
+      margin-right: 2vw;
+  }
+  .download button:nth-child(2){
+    margin-left: 2vw;
+}
+
+  .download button:hover{
+    box-shadow: 0px 0px 10px #7D6AE4;transition: 0.3s;
+  }
+
+  /* ------------------ MOBILE ------------------ */
+  
+  
+  @media screen and (min-width: 300px) 
+    and (max-width: 480px){
+    #question img{
+      z-index: 0;
+    }
+    .lines_background{
+      height: auto;
+      background-image: url("../images/background_past_mobile.png");
+    }
+  
+    .guide{
+      padding-top: 12vh;
+      height: auto;
+    }
+    .question p{
+      width:80%;
+    }
+    #pc{
+      display: none;
+      margin: 0;
+    }
+    #mobile{
+      display: block;
+      font-size: 2.8em;
+      text-align: left;
+    }
+    .guide h1{
+      margin: 5% auto;
+        width:70%;
+    }
+    .guide p{
+        width:70%;
+        font-family: Hind-light;
+
+    }
+    .cont_faq{
+      width:70%;
+      margin-bottom: 4%;
+      padding:4%;
+    }
+    .cont_faq ul{
+      width:80%;
+      font-size: 0.9rem;
+      font-family: Hind-light;
+  
+    }
+    .cont_faq{
+  border-width:2px;
+    }
+    .cont_faq:hover{
+      border: double 2px transparent;
+    }
+    
+
+    .download{
+        margin-bottom:  5%;
+        display: flex;
+    }
+    .download button{
+      border: none;
+      background: linear-gradient(90deg, #942873 -4.12%, #4A2BEC 109.88%);
+      box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.46);
+      border-radius: 24px;
+      color: white;
+      font-size: 0.8em;
+      cursor: pointer;
+      font-family: Poppins;
+      height: 5vh;
+      padding: 0 3vw;
+      margin-right: 0;
+    }
+  
+  }
+  /* ------------------ IPAD ------------------ */
+  @media screen and (min-width: 480px) 
+  and (max-width: 1030px){  
+    .lines_background{
+      background-image: url("../images/background_faq.png");
+    }
+  
+  }
+  
