@@ -27,7 +27,7 @@ html {
 
 body {
     width: 100vw;
-    background-color: #b215c6;
+    /*background-color: #b215c6;*/
     overflow-x: hidden; 
 }
 
@@ -66,16 +66,24 @@ li{
     grid-template-columns: 1fr 1.3fr;
     background-color: var(--color-white);
     box-sizing: border-box;
-    align-items: center;
+    /*align-items: center;*/
 }
+/*
 #nav img{
   cursor: pointer;
   align-self: center;
   margin:auto;
 }
+*/
+
+#logo{
+  text-align: left;
+  margin: auto;
+}
 
 #shift{
-  align-self: start;
+  cursor: pointer;
+  margin-left: 10%;
   width: 13%;
 }
 
@@ -94,15 +102,16 @@ li{
   }
 
 #menu{
-  margin:auto 3%;
+  margin:auto 10%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /*align-items: right;*/
+  justify-content: right;
 }
 #menu_nav{
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
 }
 
 
@@ -142,11 +151,24 @@ li{
 footer{
   background-image: url("../images/footer.png");
   width: 100vw;
+  /*display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end;*/
+  padding: 5% 10%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-div{
+  object-fit: cover;
   display: flex;
+  padding-right: 25%;
+  padding-top: 10%;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 5% 10%;
 }
 
 .contact , .social , .made{
@@ -279,6 +301,7 @@ footer{
     top:0;
     left:0;
     height: 100vh;
+    text-align: right;
   }
   
   #menu a{

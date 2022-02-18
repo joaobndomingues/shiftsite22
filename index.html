@@ -34,7 +34,9 @@
   <section class="gradient_background">
       <nav>
         <div id="nav">
-          <img id="shift" onclick="window.location.href = 'index.html';" src="images/Logo.png" alt="logo">
+          <div id="logo">
+            <img id="shift" onclick="window.location.href = 'index.html';" src="images/Logo.png" alt="logo">
+          </div>
           <div id="menu">
             
             <div id="menu_nav">
@@ -58,13 +60,16 @@
         </div>
       </nav>
 <main>
-      <div id="scene" class="hero">
-        <img data-depth="0" src="images/SHIFT JUST GOT REAL.png" id="got" alt="shift just got real">
-        <img data-depth="0" src="images/1ST, 2ND AND 3RD APRIL.png" id="1" alt="1st, 2nd and 3rd april">
+      <!--<div id="scene" class="hero">
         <img data-depth="0.5" src="images/tigre1.png" id="tiger1" alt="tigre">
         <img data-depth="0" src="images/tigre2.png" id="tiger2" alt="tigre">
-      </div>
+      </div>-->
       
+      <div id="titles">
+        <h1>SHIFT JUST GOT REAL</h1>
+        <h3>1ST, 2ND AND 3RD APRIL</h3>
+      </div>
+
   </section>
 
   <div class="bubbles_background">
@@ -131,8 +136,13 @@
               <p>Any student, professional or enthusiast can be part of it! You can team up with your closest friends, your family, your co-workers, someone who’s willing to put their heart and soul into this adventure!</p>
             </div>
           </div>
+          
+        </div>
+
+        <div id="button_see_more">
           <a id="button" href="faq.html">See more</a>
         </div>
+
       </div>
     </section>
 <div id="partners">
@@ -145,16 +155,16 @@
           
           <div class="partners">
             <div class="partner-section diamond">
-              <a  href="https://dei.uc.pt/FirstFoundation/" target="_blank" ><img src="images/partners/first-foundation.png"></a>
+              <a href="https://dei.uc.pt/FirstFoundation/" target="_blank" ><img class="diamond-img" src="images/partners_index/first-foundation.png"></a>
             </div>
             <div class="partner-section gold">
-              <a href="https://mindera.com/" target="_blank"><img src="images/partners/mindera.png"></a>
+              <a href="https://mindera.com/" target="_blank"><img class="gold-img" src="images/partners_index/mindera.png"></a>
             </div>
             <div class="partner-section silver">
-              <a class="silver" href="" target="_blank"><img src="images/partners/nada.png"></a>
+              <a class="silver" href="" target="_blank"><img class="silver-img" src="images/partners_index/silver.png"></a>
             </div>
               <div class="partner-section bronze">
-                <a class="bronze" href="https://www2.deloitte.com/pt/pt.html" target="_blank"><img src="images/partners/deloitte.png"></a>
+                <a class="bronze" href="https://www2.deloitte.com/pt/pt.html" target="_blank"><img class="bronze-img" src="images/partners_index/deloitte.png"></a>
             </div>
           </div>
         </div>
@@ -200,43 +210,46 @@
   </div>
 </main>
   <footer>
-    <div class="contact">
+    <div class="footer-div">
+
+      <div class="contact">
         <h3>Contact us</h3>
         <p>+351 913 847 824
-        <br> +351 964 302 766
-        <br>shiftappens@gmail.com</p>
-    </div>
-
-    <div class="social">
-      <div class="social_img">
-        <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>
-        <a class="social_i" href="https://facebook.com/shiftappens21"> <img src="images/facebook.svg" alt="logo_facebook"> </a>
-        <img id="shift_icon" onclick="window.location.href = 'index.html';" src="images/logo_icon.png" alt="logo">
-        <a class="social_i" href="https://www.instagram.com/shiftappens"> <img src="images/insta.svg"alt="logo_instagram"> </a>
-        <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"alt="logo_linkedin"> </a>
+          <br> +351 964 302 766
+          <br>shiftappens@gmail.com</p>
       </div>
-
-      <!--
-
-        <div class="social_text">
-          <a href="index.html">GO TO TOP</a>
-          <a href="faq.html">FAQ</a>
-          <a href="past.html">PAST</a>
-          <a href="about.html">ABOUT US</a>
-        </div>
-      -->
       
-    </div>
-
-    <div class="made">
+      <div class="social">
+        <div class="social_img">
+          <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>
+          <a class="social_i" href="https://facebook.com/shiftappens21"> <img src="images/facebook.svg" alt="logo_facebook"> </a>
+          <img id="shift_icon" onclick="window.location.href = 'index.html';" src="images/logo_icon.png" alt="logo">
+          <a class="social_i" href="https://www.instagram.com/shiftappens"> <img src="images/insta.svg"alt="logo_instagram"> </a>
+          <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"alt="logo_linkedin"> </a>
+        </div>
+        
+        <!--
+          
+          <div class="social_text">
+            <a href="index.html">GO TO TOP</a>
+            <a href="faq.html">FAQ</a>
+            <a href="past.html">PAST</a>
+            <a href="about.html">ABOUT US</a>
+          </div>
+        -->
+        
+      </div>
+      
+      <div class="made">
         <div class="made_img">
           <img src="images/nei.svg" onclick="window.location.href = 'https://nei.dei.uc.pt'" alt="logo_nei">
           <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
         </div>
         <p>Made with <a style="text-decoration: underline;">love</a> by us</p>
+      </div>
     </div>
   </footer>
-
+  
   
 </body>
 <script>
