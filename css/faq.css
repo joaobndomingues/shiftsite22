@@ -1,6 +1,11 @@
-.lines_background{
-  background-image: url("../images/background_faq_c.png");
+body{
+  background-image: url("../images/fundo-faq.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
 }
+
 .faqs{
   display: flex;
   align-items: center;
@@ -20,7 +25,7 @@
 }
 .cont_faq{
   padding: 2%;
-  background: #1E1A30;
+  background: rgba(0, 0, 0, 0.1) ;
   border: 1px solid #FFFFFF;
   border-image-slice: 1;
   border-width: 3px;
@@ -32,11 +37,13 @@
 }
 
  .cont_faq:hover{
+   border-color: #ffffff;
   border: double 3px transparent;
-  background-image: linear-gradient( #1E1A30,#1E1A30 ), radial-gradient(circle at top left, #AC8FEC 0%,#E885A6 100%);
+  /* background-image: linear-gradient( #1E1A30,#1E1A30 ), radial-gradient(circle at top left, #AC8FEC 0%,#E885A6 100%); */
+  background: rgba(255, 255, 255, 0.1);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+  box-shadow: 0px 0px 18px #FFFFFF;transition: 0.3s;
 } 
 
 .answer{
@@ -69,9 +76,9 @@
   #question img{
     z-index: 0;
   }
-  .lines_background{
+  body{
     height: auto;
-    background-image: url("../images/background_past_mobile.png");
+    background-image: url("../images/Fundo.png");
   }
 
   .faqs{
@@ -116,8 +123,8 @@ border-width:2px;
 /* ------------------ IPAD ------------------ */
 @media screen and (min-width: 480px) 
 and (max-width: 1030px){  
-  .lines_background{
-    background-image: url("../images/background_faq.png");
+  body{
+    background-image: url("../images/fundo-faq.svg");
   }
 
 }
