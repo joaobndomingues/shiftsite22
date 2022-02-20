@@ -1,5 +1,5 @@
 body{
-  background-image: url("../images/fundo.png");
+  background-image: url("../images/fundo_about.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -43,7 +43,9 @@ body{
   margin-top: 6%;
 }
 .logo{
-  height: 10vh;
+  /*height: 10vh;*/
+  margin-left: 2%;
+  width: 20%;
   margin-bottom: 6%;
   cursor: pointer;
 }
