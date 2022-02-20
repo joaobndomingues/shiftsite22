@@ -79,10 +79,12 @@ body{
     align-items: center;
     font-size: 0.8em;
   }
+  
   .text{
     width: 73vw;
     justify-content: center;
   }
+
   .cont_about div:first-child{
     margin-bottom: 10vh;}
 
