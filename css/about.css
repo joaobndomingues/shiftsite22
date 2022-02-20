@@ -51,17 +51,21 @@ body{
 }
 /* ------------------ MOBILE ------------------ */
 @media screen and (min-width: 300px) 
-  and (max-width: 480px){
-      .lines_background{
-    background-image: url("../images/background_about_mobile.png")
+  and (max-width: 700px){
+    
+  body{
+    height: auto;
+    background-image: url("../images/Fundo.png");
   }
   .about{
     padding-top: 12vh;
 
   }
   .logo{
-    height: 8vh;;
+    height: 8vh;
   }
+
+
   .about h1{
     font-size: 2.2rem;
     width:72%;
@@ -77,7 +81,7 @@ body{
   }
   .text{
     width: 73vw;
-
+    justify-content: center;
   }
   .cont_about div:first-child{
     margin-bottom: 10vh;}
@@ -86,11 +90,4 @@ body{
   font-family: Hind-light;
   }
 
-}
-/* ------------------ IPAD ------------------ */
-@media screen and (max-width: 1030px) {
-  .lines_background{
-    background-image: url("../images/background_about_mobile.png");
-  }
-  
 }
