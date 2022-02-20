@@ -241,6 +241,7 @@ footer{
 @media screen and (min-width: 320px) 
   and (max-width: 500px){
  
+    
     p, ul{
       line-height: 22px;
     }
@@ -255,9 +256,18 @@ footer{
       grid-template-columns: 1fr 1fr;
       position: absolute;
   }
+
+  #logo{
+    margin: 0 0 0 0;
+  }
+
   #shift{
-    z-index: 4;
-    width:40vw;
+    width:20vw;
+    margin-left: 5%;
+  }
+  
+  #menu{
+    padding-right: 10%;
   }
 
   #nav img:nth-child(2), #nav img:nth-child(3) {
@@ -334,6 +344,11 @@ footer{
     /* FOOTER */
 
     footer{
+      background-image: url("../images/footer_mobile.png");
+      padding: 0 0 0 0;
+    }
+
+    .footer-div{
       display: flex;
       flex-direction: column;
       padding: 10% ;
@@ -342,11 +357,7 @@ footer{
     }
 
     .contact , .social , .made{
-      width: 90%;
-    }
-
-    #shift_icon{
-      display: none;
+      width: 100%;
     }
 
     .social{

@@ -18,22 +18,21 @@ body{
 .faqs h1{
   font-size: 3rem;
   margin: 5% auto;
-  text-transform: uppercase;
 }
 #mobile{
   display: none;
 }
 .cont_faq{
   padding: 2%;
-  background: rgba(0, 0, 0, 0.1) ;
-  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #DFC6FF;
   border-image-slice: 1;
   border-width: 3px;
   box-sizing: border-box;
   border-radius: 8px;
   width:50%;
   margin-bottom: 2%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 14px 10px rgba(255, 255, 255, 0.1);
 }
 
  .cont_faq:hover{

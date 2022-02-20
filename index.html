@@ -228,16 +228,6 @@
           <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"alt="logo_linkedin"> </a>
         </div>
         
-        <!--
-          
-          <div class="social_text">
-            <a href="index.html">GO TO TOP</a>
-            <a href="faq.html">FAQ</a>
-            <a href="past.html">PAST</a>
-            <a href="about.html">ABOUT US</a>
-          </div>
-        -->
-        
       </div>
       
       <div class="made">
@@ -254,6 +244,7 @@
 </body>
 <script>
   //animação tigre
+  /*
   var scene = document.getElementById('scene');
   var parallaxInstance = new Parallax(scene);
   $("#tiger")
@@ -268,6 +259,7 @@
       $("#make").css('opacity', 1)
 
     });
+  */
 
     //botão newsletter
     var txt= document.getElementById("txt_newsletter");
@@ -275,10 +267,11 @@
     function newsletterClick(){
         txt.innerHTML = "Welcome to the family! Please check your email.";
         but.value = "Thank you!";
-    }
+    };
 
     //faqs
     var question = document.getElementsByClassName("question");
+    console.log(question)
     var question_img = document.getElementsByClassName("icon");
     var icone= document.getElementById("icone");
     var i;

@@ -1,4 +1,4 @@
-    function showMenu(){
+function showMenu(){
 var menu= document.getElementById("menu_nav");
 var tigre = document.getElementById("tigre_mobile");
 var img = document.getElementById("menu_icon");
