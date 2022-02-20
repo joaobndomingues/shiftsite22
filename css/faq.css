@@ -72,7 +72,7 @@ body{
 
 
 @media screen and (min-width: 300px) 
-  and (max-width: 480px){
+  and (max-width: 900px){
   #question img{
     z-index: 0;
   }
@@ -95,7 +95,7 @@ body{
   #mobile{
     display: block;
     font-size: 2.8em;
-    text-align: left;
+    text-align: center;
   }
   .faqs h1{
     margin: 5% auto;
@@ -121,10 +121,21 @@ border-width:2px;
 
 }
 /* ------------------ IPAD ------------------ */
-@media screen and (min-width: 480px) 
-and (max-width: 1030px){  
+/* @media screen and (min-width: 480px) 
+and (max-width: 900px){  
   body{
     background-image: url("../images/fundo-faq.svg");
   }
 
-}
+  #mobile{
+    display: block;
+    font-size: 2.8em;
+    text-align: left;
+  }
+
+  #pc{
+    display: none;
+    margin: 0;
+  }
+
+} */
