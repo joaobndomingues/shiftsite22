@@ -306,17 +306,16 @@ footer{
     z-index: 3;
     display: none;
     width:100%;
-    padding: 15vh 8vw 20vh 8vw ;
+    padding-top: 22vh;
     position: absolute;
     top:0;
     left:0;
     height: 100vh;
-    text-align: right;
+    text-align: center;
   }
   
   #menu a{
-    width: 85vw;
-    text-align: left;
+    width: 100vw;
   }
 
   #menu_icon{
@@ -327,9 +326,10 @@ footer{
   #menu_nav a{
     display: block;
     color:white;
-    font-size: 2.8rem;
-    font-family: Poppins-bold;
-    padding-bottom: 5%;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 700;
+    padding-bottom: 15%;
   }
 
   #menu a:nth-child(2) {
