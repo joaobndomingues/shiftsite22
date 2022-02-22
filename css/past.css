@@ -32,13 +32,12 @@ body{
   display: flex;
   align-items: center;
   width:55%;
-  flex-wrap: wrap;
   justify-content: center;
 
 }
 
 .year a{
-  background: linear-gradient(90deg, #7F45F9 0%, #2131C3 100%);
+  /*background: linear-gradient(90deg, #7F45F9 0%, #2131C3 100%);*/
   border: 2px solid #DFC6FF;
   /*box-sizing: border-box;*/
   border-radius: 10px;
@@ -46,8 +45,20 @@ body{
   line-height: 300%;
   padding: 0vh 5vw;
   margin: 2%;
-  transition: background 1s ease;
 }
+
+.button{
+  background: linear-gradient(90deg, #7F45F9 , #2131C3 , #AB00E7 , #FFB26A );
+  transition: 0.5s background-position;
+  background-size: 300%;
+  background-position: left;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-position: right;
+}
+/*
 .year a:hover{
   background-color: #964DF2;
   box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
@@ -55,7 +66,7 @@ body{
 .year a:active{
   background-color: #9665D6;
   box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
-}
+}*/
 
 #content-gallery{
   /*width: 45vw;
@@ -105,7 +116,7 @@ body{
 
 .prev,
 .next {
-  background: linear-gradient(90deg, #7F45F9 0%, #2131C3 100%);
+  /*background: linear-gradient(90deg, #7F45F9 0%, #2131C3 100%);*/
   border: 2px solid #DFC6FF;
   /*box-sizing: border-box;*/
   border-radius: 10px;
@@ -113,15 +124,14 @@ body{
   line-height: 300%;
   padding: 0vh 5vw;
   margin: 2%;
-  transition: background 1s ease;
 }
-.prev:hover,
+/*.prev:hover,
 .next:hover{
   cursor: pointer;
 color:#B690E8;
 border-bottom: 3px solid #B690E8;
 text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
-}
+}*/
 
 .partners_text{
   width:50%;
@@ -160,9 +170,11 @@ text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 @media screen and (min-width: 300px) 
   and (max-width: 480px){
 
-  .lines_background{
-    background-image: url("../images/background_past_mobile.png");
-  }
+
+body{
+    background-image: url("../images/fundo-mobile-past.jpg");
+}
+
 
 .past h1, .partners h1, .memories h1{
   font-size: 2.2rem;
@@ -172,44 +184,54 @@ text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
 
 #content-gallery{
   width: 60vw;
-  position: relative;
+  /*position: relative;*/
 }
 #barra{
   margin-bottom: 4%;
 }
 .images{
-  position: absolute;
-  z-index: 2;
-  left:-7%;
+  margin-top: 30%;
+  left:-8%;
   transition: 2s;
   width: 120%;
 }
 .past{
+  padding-top: 44vh;
   margin-bottom:5vh;
 }
 
+.memories{
+  overflow: visible;
+}
+
 #controls{
-display: none;
+  justify-content: space-between;
+  margin-top: 20%;
 }
+
+.prev, .next{
+  padding: 0vh 10vw;
+}
+
 .partner-section {
+  width: 80%;
   margin: 2rem 0;
+  text-align: left;
 }
-.partner-section , .partners_text{
+.partners_text{
   width:70%;
   font-size: 0.9rem;
   text-align: left;
 }
-.past{
-  padding-top: 14vh;
-}
+
 .partners{
   margin-top: 30vh;
   padding-top: 0vh;
   padding-bottom:0;
 }
 .partner-section a{
-  width: 3rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 4rem;
   border-radius: 9px;
   margin-bottom: 0.7rem;
 }
@@ -222,9 +244,14 @@ display: none;
 }
 .year a{
   font-size: 1.1rem;
-  padding: 6% 10%;
+  padding: 0vh 12vw;
   margin: 5%;
 }
+
+.partner-section img{
+  width: 110%;
+}
+
 }
 /* ------------------ IPAD ------------------ */
 @media screen and (min-width: 480px) 
@@ -242,7 +269,6 @@ and (max-width: 1030px){
   }
   .images{
     position: absolute;
-    z-index: 2;
     left:-5%;
     transition: 2s;
     width: 110%;

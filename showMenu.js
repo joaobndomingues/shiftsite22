@@ -6,9 +6,7 @@ var img = document.getElementById("menu_icon");
 
        if (window.getComputedStyle(menu).display === "none" ){
         menu.style.display="block";
-        /*menu.style.backgroundImage="url(images/)"*/
-        menu.style.backgroundColor="#000000";
-        tigre.style.display="block";
+        menu.style.backgroundImage="url(images/fundo-mobile-menu.jpg)"
         img.src= "images/close.svg"
         document.body.style.position = 'fixed';
         document.body.style.top = `-${window.scrollY}px`;
