@@ -9,7 +9,7 @@ body{
 
 /* TIGRE E TEXTO*/
 .hero {
-  height: 90vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -33,21 +33,53 @@ body{
 
 #tiger1 {
   position: absolute;
-  left: 26% !important;
-  top:-6% !important;
+  /*left: 26% !important;
+  /* top:-6% !important; */
+  top: 17%;
   opacity: 0.9;
   transition: 0.5s;
-  width: 46vw;
+  width: 30vw;
 }
 
 #tiger2 {
   position: absolute;
-  left: 26% !important;
-  top:-6% !important;
+  /*margin-top: 6.5%;
+  margin-left: 36.5% !important;*/
+  /* top:-6% !important; */
+  top: 19%;
   opacity: 0.7;
   transition: 0.5s;
-  width: 46vw;
+  width: 27vw;
 }
+
+#tiger3{
+  position: absolute;
+  /*margin-top: 7.5%;
+  margin-left: 38% !important;*/
+  /*left: 26% !important;
+  /* top:-6% !important; */
+  top: 21%;
+  opacity: 0.5;
+  transition: 0.5s;
+  width: 24vw;
+}
+
+/*TITULOS PRINCIPAIS*/
+#titles{
+  text-align: center;
+}
+
+#titles h1{
+  margin-top: 1%;
+  font-size: 3rem;
+  /* margin-bottom: 15%; */
+}
+
+#titles h3{
+  font-size: 1.5rem;
+  margin-top: 3%;
+}
+
 
 #makeitappen_mobile{
   opacity:0;
@@ -72,13 +104,6 @@ body{
   flex-direction: column;
 }
 
-.whole {
-  min-height: 85vh;
-}
-
-.half {
-  min-height: 50vh;
-}
 
 .faq{
   display: flex;
@@ -101,6 +126,7 @@ body{
 }
 
 .cont h1 {
+  margin-top: 30%;
   font-size: 3.4rem;
 }
 
@@ -117,11 +143,6 @@ body{
   border: 3px solid #fff;
   border-radius: 8px ;
   
-}
-
-/*TITULOS PRINCIPAIS*/
-#titles{
-  text-align: center;
 }
 
 /* PARTNERS */
@@ -197,7 +218,7 @@ body{
 .cont_faq{
   padding: 4%;
   background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 4%;
@@ -238,7 +259,7 @@ body{
 
 .cont #button{
   background-image: linear-gradient(90deg, #7F45F9 , #2131C3 , #AB00E7 , #FFB26A );
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   /*box-sizing: border-box;*/
   border-radius: 10px;
   /*text-align: right;*/
@@ -299,7 +320,7 @@ body{
   font-size: 0.9rem;
   padding: 0 2vw;
   width:34vw;
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   box-sizing: border-box;
 }
 
@@ -314,7 +335,7 @@ body{
   height: 7vh;
   padding: 0 3vw;
   margin-right: 0;
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   box-sizing: border-box;
   transition: 0.5s background-position;
   background-size: 300%;
@@ -362,19 +383,51 @@ body{
   min-width: 80vw;
   margin:auto;
 }
+
 #tiger1 {
-  margin-top: 25%;
-  left: 1% !important;
-  width: 100vw;
+  position: absolute;
+  /*left: 26% !important;
+  /* top:-6% !important; */
+  top: 23%;
+  opacity: 0.9;
+  transition: 0.5s;
+  width: 54vw;
 }
+
 #tiger2 {
-  margin-top: 25%;
-  left: 0% !important;
-  width: 100vw;
+  position: absolute;
+  /*margin-top: 6.5%;
+  margin-left: 36.5% !important;*/
+  /* top:-6% !important; */
+  top: 24.5%;
+  opacity: 0.7;
+  transition: 0.5s;
+  width: 49vw;
+}
+
+#tiger3{
+  position: absolute;
+  /*margin-top: 7.5%;
+  margin-left: 38% !important;*/
+  /*left: 26% !important;
+  /* top:-6% !important; */
+  top: 26%;
+  opacity: 0.5;
+  transition: 0.5s;
+  width: 43vw;
+}
+
+#titles h1{
+  font-size: 1.7rem;
+  margin-bottom: 7%;
+}
+
+#titles h3{
+  font-size: 1.1rem;
 }
 
 .whole{
-  min-height: 100vh;
+  min-height: 30vh;
 }
 
 .half{
@@ -398,7 +451,8 @@ body{
 }
 .cont h1{
   font-size: 1.9em;
-  margin-bottom: 25%;
+  margin-bottom: 3%;
+  margin-top: 65%;
 }
 .content-text h2{
   font-size: 1.3em;
@@ -476,6 +530,7 @@ width:40vw;
 }
 
 /* ------------------ IPAD ------------------ */
+/*
 @media screen and (min-width: 600px)and (max-width: 1030px){ 
 
  .bubbles_background {

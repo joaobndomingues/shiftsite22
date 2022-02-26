@@ -9,6 +9,7 @@ var img = document.getElementById("menu_icon");
         menu.style.backgroundImage="url(images/fundo-mobile-menu.jpg)"
         img.src= "images/close.svg"
         document.body.style.position = 'fixed';
+        menu.style.objectFit = 'cover';
         document.body.style.top = `-${window.scrollY}px`;
 }
       else {

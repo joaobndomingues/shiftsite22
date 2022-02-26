@@ -67,10 +67,16 @@
         <img data-depth="0.5" src="images/tigre1.png" id="tiger1" alt="tigre">
         <img data-depth="0" src="images/tigre2.png" id="tiger2" alt="tigre">
       </div>-->
+
+      <div id="scene" class="hero">
+        <img src="images/Tigre 1 1.png" id="tiger1" alt="tigre">
+        <img src="images/Tigre 2 1.png" id="tiger2" alt="tigre">
+        <img src="images/Tigre 3 1.png" id="tiger3" alt="tigre">
+      </div>
       
       <div id="titles">
         <h1>SHIFT JUST GOT REAL</h1>
-        <h3>1ST, 2ND AND 3RD APRIL</h3>
+        <h3>8TH, 9TH AND 10TH APRIL</h3>
       </div>
 
   </section>
@@ -163,9 +169,9 @@
             <div class="partner-section gold">
               <a href="https://mindera.com/" target="_blank"><img class="gold-img" src="images/partners_index/mindera.png"></a>
             </div>
-            <div class="partner-section silver">
+            <!--<div class="partner-section silver">
               <a class="silver" href="" target="_blank"><img class="silver-img" src="images/partners_index/silver.png"></a>
-            </div>
+            </div>-->
               <div class="partner-section bronze">
                 <a class="bronze" href="https://www2.deloitte.com/pt/pt.html" target="_blank"><img class="bronze-img" src="images/partners_index/deloitte.png"></a>
             </div>
@@ -241,28 +247,57 @@
         <p>Made with <a style="text-decoration: underline;">love</a> by us</p>
       </div>
     </div>
+
+    <div class="footer-mobile-div">
+      <div class="mobile-social">
+        <div class="mobile-social_img">
+          <a class="social_i" href="https://twitter.com/shiftappens"> <img src="images/twitter.svg" alt="logo_twitter"> </a>
+          <a class="social_i" href="https://facebook.com/shiftappens21"> <img src="images/facebook.svg" alt="logo_facebook"> </a>
+          <img id="shift_icon" onclick="window.location.href = 'index.html';" src="images/logo_icon.png" alt="logo">
+          <a class="social_i" href="https://www.instagram.com/shiftappens"> <img src="images/insta.svg"alt="logo_instagram"> </a>
+          <a class="social_i" href="https://www.linkedin.com/company/shift-appens"> <img src="images/linkedin.svg"alt="logo_linkedin"> </a>
+        </div>
+      </div>
+      <div class="mobile-contact-made">
+        <div class="contact">
+          <h3>Contact us</h3>
+          <p>+351 913 847 824
+            <br> +351 964 302 766
+            <br>shiftappens@gmail.com</p>
+        </div>
+
+        <div class="made">
+          <div class="made_img">
+            <img src="images/nei.svg" onclick="window.location.href = 'https://nei.dei.uc.pt'" alt="logo_nei">
+            <img src="images/jeK.svg" onclick="window.location.href = 'https://jeknowledge.pt'" alt="logo_jek">
+          </div>
+          <p>Made with <a style="text-decoration: underline;">love</a> by us</p>
+        </div>
+      </div>
+    </div>
   </footer>
   
   
 </body>
 <script>
   //animação tigre
-  /*
-  var scene = document.getElementById('scene');
-  var parallaxInstance = new Parallax(scene);
-  $("#tiger")
-    .mouseover(function () {
-      $("#tiger").css('z-index', 2);
-      $("#tiger").css('opacity', 1);
-      $("#make").css('opacity', 0);
-    })
-    .mouseout(function () {
-      $("#tiger").css('z-index', 0);
-      $("#tiger").css('opacity', 0.6);
-      $("#make").css('opacity', 1)
+  
+  /*var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene);*/
 
-    });
-  */
+  window.addEventListener("mousemove", e =>{
+    let x = e.clientX - screen.width/2;
+    let y = e.clientY - screen.height/2;
+
+    const tig1 = document.querySelector("#tiger1");
+    const tig2 = document.querySelector("#tiger2");
+    const tig3 = document.querySelector("#tiger3");
+
+    tig1.style.transform = `translate(${x * 0.08}px, ${y * 0.08}px)`;
+    tig2.style.transform = `translate(${x * 0.06}px, ${y * 0.06}px)`;
+    tig3.style.transform = `translate(${x * 0.04}px, ${y * 0.04}px)`;
+  });
+
 
     //botão newsletter
     var txt= document.getElementById("txt_newsletter");
